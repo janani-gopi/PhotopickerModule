@@ -1,11 +1,11 @@
 import {
   View,
   Text,
-  StyleSheet,
   TouchableOpacity,
   Image,
   Alert,
 } from 'react-native';
+import {styles} from "./Styles"
 import React, {useRef, useState} from 'react';
 import Entypo from 'react-native-vector-icons/Entypo';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -181,17 +181,18 @@ const App = () => {
                   style={{
                     height: 70,
                     width: 70,
-                    borderRadius: 15,
+                    borderRadius: 10,
                   }}
                   key={index}
                 />
+                <Text style={styles.imagecaption}>img.jpg{Math.round(Math.random()*2000 + 1)}</Text>
                 <TouchableOpacity
                   onPress={() => {
                     deleteSingleImage(index);
                   }}>
-                  <FontAwesome
+                  <Ionicons
                     name="close"
-                    size={20}
+                    size={25}
                     color={'#ffc30b'}
                     style={styles.icon}
                   />

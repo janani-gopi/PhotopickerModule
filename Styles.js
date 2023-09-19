@@ -104,8 +104,13 @@ export const styles = StyleSheet.create({
     },
     icon: {
       position: 'absolute',
-      top: -92,
+      top: -99,
       left: 33,
     },
+    imagecaption:{
+        fontSize:12,
+        marginTop:5,
+        color:"black"
+    }
   });
   
